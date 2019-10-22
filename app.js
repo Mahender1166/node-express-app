@@ -20,32 +20,32 @@ const port = process.env.PORT || config.get("port");
 app.get('/', function (req, res) {
   res.send('Welcome to the default page!  <br> <br>' +
     'Try going to different URIs by adding these at the end: <br> <br>' +
-    '/hello <br>' +
+    '/welcome <br>' +
     '/big <br>' +
     '/json <br>' +
     '/greeting/yourname <br>' +
-    '/yo/Dr.Rogers <br>' +
+    '/yo/MahenderReddy <br>' +
     '/fortune <br>' +
-    '/fancy/?first=Denise&last=Case <br>' +
+    '/fancy/?first=MahenderReddy&last=Surkanti <br>' +
     '<br> <br>' +
-    'Fork the source code from <a href="https://github.com/denisecase/node-express-app">https://github.com/denisecase/node-express-app</a>'
+    'Fork the source code from <a href="https://github.com/Mahender1166/node-express-app">https://github.com/Mahender1166/node-express-app</a>'
   )
 })
 
 // or use the new arrow function syntax
 // respond with text
-app.get('/hello', (req, res) => {
-  res.send('Hello World!')
+app.get('/welcome', (req, res) => {
+  res.send('Welcome!')
 })
 
 // or respond with html
-app.get('/big', (req, res) => {
-  res.send('<h1>Hello World!</h1>')
+app.get('/bigbold', (req, res) => {
+  res.send('<h1><b>Welcome!</b></h1>')
 })
 
 // or respond with JSON
 app.get('/json', (req, res) => {
-  res.send('{"name" : "Nandini"}')
+  res.send('{"FirstName" : "YourFirstName", "LastName" : "YourLastName" }')
 })
 
 // :name indicates a parameter at this location in the URI
@@ -92,13 +92,13 @@ app.use((req, res, next) => {
 app.listen(port, hostname, () => {
   console.log(`\n App listening at http://${hostname}:${port}/`)
   console.log(`\n Try going to different URIs:\n`)
-  console.log(`   Try /hello`)
-  console.log(`   Try /big`)
+  console.log(`   Try /welcome`)
+  console.log(`   Try /bigbold`)
   console.log(`   Try /json`)
   console.log(`   Try /fortune`)
   console.log(`   Try /greeting/yourname`)
-  console.log(`   Try /yo/Dr.Rogers`)
-  console.log(`   Try /fancy/?first=Denise&last=Case`)
+  console.log(`   Try /yo/MahenderReddy`)
+  console.log(`   Try /fancy/?first=MahenderReddy&last=Surkanti`)
   console.log('\n Hit CTRL-C CTRL-C to stop\n')
 })
 

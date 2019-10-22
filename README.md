@@ -5,7 +5,7 @@
 ## Links
 
 - [Demo](https://node-express-app-563.herokuapp.com/)
-- [Source](https://github.com/denisecase/node-express-app)
+- [Source](https://github.com/Mahender1166/node-express-app)
 
 ## Requirements
 
@@ -63,12 +63,12 @@ node app.js
 Open a web browser. Try these URLs:
 
 1. <http://127.0.0.1:3002/> or <http://localhost:3002/>.
-1. <http://localhost:3002/hello>
-1. <http://localhost:3002/big>
+1. <http://localhost:3002/welcome>
+1. <http://localhost:3002/bigbold>
 1. <http://localhost:3002/greeting/42>
-1. <http://localhost:3002/yo/Lohita>
-1. <http://localhost:3002/yo/Rahul>
-1. <http://localhost:3002/yo/Teja>
+1. <http://localhost:3002/yo/Mahender>
+1. <http://localhost:3002/yo/Nikitha>
+1. <http://localhost:3002/yo/Kavitha>
 1. <http://localhost:3002/fortune>
 
 ## Modify and Restart Your Node Server
@@ -157,6 +157,4 @@ On Windows, use Git Bash to execute the commands - NOT PowerShell. Add an alias 
 - [Heroku hosting](https://devcenter.heroku.com)
 - [Git Bash Shell for Heroku CLI](https://devcenter.heroku.com/articles/git)
 
-## See Also
 
-- [More App Examples](https://profcase.github.io/web-apps-list/)
